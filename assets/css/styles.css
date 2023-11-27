@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  color: #ccc;
+}
+
+.sub-title {
+  font-size: 20px;
+  margin: 0.5em 0;
+  color: #ff004f;
+}
+
+.btn {
+  text-decoration: none;
+  color: #ccc;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: darkorange;
+  border-radius: 10px;
+  margin: 30px 0;
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: #ff004f;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid white;
+}
+nav .logo {
+  width: 144px;
+}
+nav ul {
+  display: none;
+}
+
+.Hero {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/lawrence.png");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Hero .hero-text {
+  padding: 100px 8% 10px;
+  height: 100%;
+}
+.Hero .hero-text h3 {
+  margin: 15px 0;
+}
+.Hero .hero-text h3 span {
+  color: #ff004f;
+}
+.Hero .hero-text .hello {
+  font-size: 28px;
+}
+.Hero .hero-text .hello span {
+  font-family: "clicker script", cursive;
+  font-weight: 800;
+  font-size: 35px;
+}
+.Hero .hero-text .profession {
+  font-size: 23px;
+}
+
+.About {
+  padding: 40px 8% 10px;
+}
+.About .image img {
+  display: none;
+}
+.About .text {
+  margin: 1.5em 0;
+}
+.About .text p {
+  margin: 15px 0;
+}
+
+.Skills {
+  padding: 10px 8% 10px;
+}
+.Skills p {
+  font-weight: bold;
+  margin: 20px 0 0;
+}
+.Skills ul {
+  list-style: none;
+}
+.Skills ul li {
+  margin: 10px 0;
+  padding: 10px 16px;
+  border: 1px solid white;
+  border-radius: 32px;
+}
+
+.Services {
+  padding: 40px 8% 10px;
+}
+.Services .service-content div {
+  background-color: #262626;
+  padding: 28px;
+  margin: 20px 0;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 15px;
+  transition: background 0.5s, transform 0.5s;
+}
+.Services .service-content div i {
+  font-size: 30px;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+.Services .service-content div h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.Services .service-content div p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.Services .service-content div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #23527c;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+
+.Portfolio {
+  padding: 40px 8% 10px;
+}
+.Portfolio .work-content {
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+}
+.Portfolio .work-content img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  opacity: 0.2;
+}
+.Portfolio .work-content .layer {
+  padding: 0 10px;
+  position: absolute;
+  margin: -200px 0;
+}
+.Portfolio .work-content .layer p {
+  margin: 20px 0;
+}
+.Portfolio .work-content .layer a {
+  color: #ff004f;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.Contact {
+  padding: 40px 8% 10px;
+}
+.Contact .contact-details p {
+  margin-top: 10px;
+  padding-top: 0;
+}
+.Contact .contact-details p i {
+  font-size: 20px;
+  color: #ff004f;
+}
+.Contact .contact-details .social-icons {
+  margin-top: 15px;
+}
+.Contact .contact-details .social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  display: inline-block;
+  color: #ababab;
+  margin-right: 20px;
+  transition: tranform 0.5s;
+}
+.Contact .contact-details .social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.Footer {
+  text-align: center;
+  padding: 20px 0;
+}
+.Footer p {
+  margin: 0;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff009d;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px;
+  font-weight: 600;
+}
+#back-to-top:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (width >= 926px) {
+  .Hero {
+    height: 90vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .Hero .hero-text h3 {
+    font-size: 4em !important;
+  }
+  .About .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .About .image img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block;
+  }
+  .Skills .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 40px;
+  }
+  .Services .service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 40px;
+  }
+  .Portfolio .work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 40px;
+  }
+  .Portfolio .work-list .work-content {
+    position: relative;
+    overflow: hidden;
+  }
+  .Portfolio .work-list .work-content img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    opacity: 0.9;
+  }
+  .Portfolio .work-list .work-content .layer {
+    height: 0;
+    margin: unset;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: height 0.5s;
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .Portfolio .work-list .work-content .layer a {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: unset;
+  }
+  .Portfolio .work-list .work-content:hover img {
+    transform: scale(1.1);
+  }
+  .Portfolio .work-list .work-content:hover .layer {
+    height: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
